@@ -1,4 +1,27 @@
 <template>
+  <div>
+    <my-jia></my-jia>
+    <my-jian></my-jian>
+  </div>
+</template>
+<script>
+  import Jia from "./components/jia.vue";
+  import Jian from "./components/jian.vue";
+
+  export default {
+    data() {
+      return {};
+    },
+    components: {
+      "my-jia": Jia,
+      "my-jian": Jian
+    }
+  }
+</script>
+
+
+<!--
+<template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
@@ -26,3 +49,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+-->
